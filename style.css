@@ -335,6 +335,7 @@ main{
 }
 .thumbnail--large{
 	height: 480px;
+	transition:1s;
 }
 .thumbnail:before{
 	content: "";
@@ -349,7 +350,10 @@ main{
 	      
 }
 
-
+.thumbnail--large:hover{
+	transform:scale(1.15);
+	cursor:pointer;
+}
 
 /*btn*/
 
@@ -369,3 +373,8 @@ main{
 	border-color: #03A9F4;
 }
 
+
+/*overflow*/
+.overflow--hidden{
+	overflow:hidden;
+}
