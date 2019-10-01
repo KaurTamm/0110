@@ -17,6 +17,16 @@ body{
 .page{
 	position: relative;
 	width: 100%;
+	opacity:0;
+	animation-name:intro;
+	animation-duration:1s;
+    animation-delay:6s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes intro{
+	from{opacity:0;}
+	to{opacity:1;}
 }
 
 
@@ -377,4 +387,56 @@ main{
 /*overflow*/
 .overflow--hidden{
 	overflow:hidden;
+}
+
+/*intro*/
+.intro{
+	position:absolute;
+	display:flex;
+	left:50%;
+	margin-left:-40px;
+	top:50px;
+	font-size:100px;
+	color:black;
+}
+
+.intro p{
+	width:100%;
+	opacity:0;
+}
+
+.animation1{
+    animation-name:animationfade;
+    animation-duration:1.5s;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:3;
+}
+
+.animation2{
+    animation-name:animationfade;
+    animation-duration:1.5s;
+    animation-delay:1.33s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:3;
+}
+
+.animation3{
+    animation-name:animationfade;
+    animation-duration:1.5s;
+    animation-delay:1.66s;
+    animation-timing-function:ease-out;
+    animation-iteration-count:3;
+}
+
+@keyframes animationfade{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
 }
