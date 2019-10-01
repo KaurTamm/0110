@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tammkauriktkhk/public_html/htmlcss/3001
+    - /bin/cp -R * $DEPLOYPATH
+ 
